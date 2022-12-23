@@ -22,7 +22,7 @@ urlpatterns = [
     path("polls/<int:pk>/choices/<int:choice_pk>/vote/", CreateVote.as_view(), name="polls_list"),
     path(r'docs/', include_docs_urls(title='Polls API')),
     path(r'swagger-docs/', schema_view),
-    path('my-own-view/', MyOwnView.as_view(), name = "demo")
+    path('my-own-view/', MyOwnView.as_view(), name = "demo1")
 ]
 
 urlpatterns += router.urls
